@@ -56,15 +56,15 @@ const Slider = () => {
        {
        events?.map((event)=>(
         <>
-      <div class="card_crusel slider_card" style={{width: "1rem;"}} key={event.id}>
+      <div class="card_crusel slider_card" style={{width: "1rem;"}} key={event._id}>
       <img src={urlFor(event.fimage)} class="card-img-top" alt="..."/>
         <div class="card-body slider_card_body">
-        <Link  to={`/eventDetail/${event.id}`}><h5 class="card-title">{event.name}</h5> </Link>
+        <Link  to={`/eventDetail/${event._id}`}><h5 class="card-title">{event.name}</h5> </Link>
           <p class="card-text">
           <p>Govt. Associate Commerce College Kabirwala</p>
           </p>
           <hr />
-          <Link to={`/eventDetail/${event.id}`}>
+          <Link to={`/eventDetail/${event._id}`}>
           <p>More Details</p>
           </Link>
         </div>
